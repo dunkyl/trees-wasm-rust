@@ -1087,6 +1087,7 @@ dependencies = [
  "anyhow",
  "wasmer",
  "wasmer-compiler-cranelift",
+ "wasmer-emscripten",
  "wasmer-wasi",
 ]
 
@@ -1309,6 +1310,22 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "wasmer-emscripten"
+version = "3.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c857bca95f9296a966395d4a7d13e06dd3a0ac3b2f4341f3ada012610f6c6c69"
+dependencies = [
+ "byteorder",
+ "getrandom",
+ "lazy_static",
+ "libc",
+ "log",
+ "time",
+ "wasmer",
+ "wasmer-types",
 ]
 
 [[package]]
